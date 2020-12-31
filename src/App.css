@@ -27,6 +27,13 @@
 .App-link {
   color: #61dafb;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: center;
+  background: #f6f6f6;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -38,13 +45,25 @@
 }
 
 .job {
-  width: 80%;
-  margin: 0 auto;
-  display: 'flex';
-  flex-direction: 'row';
-  text-shadow: 10%;
-  justify-content: 'space-around';
-  background-color: lightblue;
-  margin: 10px 0 10px 200px;
-  padding: 10px 0;
+  position: relative;
+  display: flex;
+  background: #fff;
+  list-style: none;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 30px;
+  width: 100%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s;
+  border-radius: 25px;
+  transform: translateY(-6px);
+}
+
+.job:hover {
+  transform: scale(1.05);
+  z-index: 100;
+  background: #25bcff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  opacity: 1.1;
 }
