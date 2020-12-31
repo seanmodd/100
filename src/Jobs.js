@@ -6,11 +6,15 @@ import Job from './Job';
 
 export default function Jobs({ jobs }) {
   return (
-    <div>
-      <Typography variant='h1'>Entry Level Software Jobs</Typography>
-      {jobs.map((job) => (
-        <Job job={job} />
-      ))}
+    <div className='officialheader'>
+      <div className='titleheader'>
+        <Typography variant='h1'>Entry Level Software Jobs</Typography>
+      </div>
+      <div>
+        {jobs.map((job) => (
+          <Job job={job} />
+        ))}
+      </div>
     </div>
   );
 }
